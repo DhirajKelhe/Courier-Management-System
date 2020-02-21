@@ -2,17 +2,13 @@
 CMS project using Python
 Important tips to run Courier Management System program:
 
-1. Only Execute CMS.py file.
-2. Do not alter data.csv file 
-3. If CMS.py giving any error, then try after changing the png files path and data.csv file path to your current directory.
-    (or run the file in command line)
-4. Other files are for testing the database.
-
+1. Execute CMS.py only.
+2. Do not alter data.csv file (unless you want to enter your own data).
+3. If CMS.py giving any error, then make sure you are running the CMS.py file from correct directory (if not, then change directory to Courier-Management-System folder). (OR run the file in command line)
+4. Other files are for testing the databases.
 5. Admin ID: admin
    password: admin
-    (if you want to change this, go to CMS.py line no. 584)
+   (To change this, go to CMS.py line no. 584)
 
 6. Create your own account from 'New user' and then log in.
-
-
--- Dhiraj Kelhe
+7. Watch cms.mp4 video to get overall understanding of the project.
