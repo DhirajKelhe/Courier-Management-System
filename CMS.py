@@ -44,14 +44,14 @@ def back(widget):
 #side icons
 def sideback(w):
     #rhs buttons & icons
-    backimg = Image.open("Back1.png")
+    backimg = Image.open("Back.png")
     backrender = ImageTk.PhotoImage(backimg)
     bimg = Button(w, image = backrender, command = lambda: back(w), bd = 0)
     bimg.image = backrender
     bimg.place(relx = .02, rely = .04)
 def sideexit(w):
     #exit image
-    exitimg = Image.open("Exit1.png")
+    exitimg = Image.open("Exit.png")
     exitrender = ImageTk.PhotoImage(exitimg)
     eimg = Button(w, image = exitrender, command = w.destroy, bd = 0)
     eimg.image = exitrender
@@ -354,7 +354,7 @@ def homepage():
     wel1.pack()
     wel2.pack()
     #rhs buttons & icons
-    backimg = Image.open("Back1.png")
+    backimg = Image.open("Back.png")
     backrender = ImageTk.PhotoImage(backimg)
     def logoutuser():
         messagebox.showinfo('User successfully Logged Out', 'User Logged Out. Redirecting to Home Screen...')
@@ -424,7 +424,7 @@ def reqcourier():
     log = Label(home, text = 'Submit an Courier Request', font = ('Script-typeface', 23, 'bold'))
     log.place(relx = .5, rely = .20, anchor = N)
     #rhs buttons & icons
-    backimg = Image.open("Back1.png")
+    backimg = Image.open("Back.png")
     backrender = ImageTk.PhotoImage(backimg)
     bimg = Button(home, image = backrender, command = lambda: homeback(home), bd = 0)
     bimg.image = backrender
@@ -601,7 +601,7 @@ def adminpage():
     wel1.pack()
     wel2.pack()
     #rhs buttons & icons
-    backimg = Image.open("Back1.png")
+    backimg = Image.open("Back.png")
     backrender = ImageTk.PhotoImage(backimg)
     def logoutadmin():
         messagebox.showinfo('Admin successfully Logged Out', 'Admin Logged Out. Redirecting to Home Screen...')
@@ -644,7 +644,7 @@ def adminback(win):
     adminpage()
 def sidebackadmin(window):
     #rhs buttons & icons
-    backimg = Image.open("Back1.png")
+    backimg = Image.open("Back.png")
     backrender = ImageTk.PhotoImage(backimg)
     bimg = Button(window, image = backrender, command = lambda: adminback(window), bd = 0)
     bimg.image = backrender
