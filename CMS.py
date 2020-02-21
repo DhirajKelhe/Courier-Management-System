@@ -15,34 +15,42 @@ import random
 #pre functions
 #existing user
 def exuserpre(widget):
+    '''This pre function is for accessing exuser() function.'''
     widget.destroy()
     exuser()
 #new user
 def newuserpre(widget):
+    '''This pre function is for accessing newusers() function.'''
     widget.destroy()
     newusers()
 #admin login
 def adminpre(widget):
+    '''This pre function is for accessing adminlogin() function.'''
     widget.destroy()
     adminlogin()
 #track package
 def trackpre(widget):
+    '''This pre function is for accessing track() function.'''
     widget.destroy()
     track()
 #cost estimator
 def costpre(widget):
+    '''This pre function is for accessing costestm() function.'''
     widget.destroy()
     costestm()
 #feedback
 def feedbackpre(widget):
+    '''This pre function is for accessing feedback() function.'''
     widget.destroy()
     feedback()
 #back
 def back(widget):
+    '''This is function for going back to previous window.'''
     widget.destroy()
     mainscreen()
 #side icons
 def sideback(w):
+    '''This function is for top right back icon.'''
     #rhs buttons & icons
     backimg = Image.open("Back.png")
     backrender = ImageTk.PhotoImage(backimg)
@@ -50,6 +58,7 @@ def sideback(w):
     bimg.image = backrender
     bimg.place(relx = .02, rely = .04)
 def sideexit(w):
+    '''This function is for top right exit icon.'''
     #exit image
     exitimg = Image.open("Exit.png")
     exitrender = ImageTk.PhotoImage(exitimg)
@@ -57,12 +66,14 @@ def sideexit(w):
     eimg.image = exitrender
     eimg.place(relx = .95, rely = .03)
 def sideicons(w):
+    '''This function is for top right icons.'''
     sideback(w)
     sideexit(w)
 
 #Main Functions---------
 #Main Window - Welcome to CMS
 def mainscreen():
+    '''This function is for creation of mainscreen, placing all elements on it and for creation of required databases.'''
     ms = Tk()
     ms.title("Home Screen")
     ms.attributes('-fullscreen',True)
@@ -168,6 +179,7 @@ def mainscreen():
 
 #Existing User (Login) window
 def exuser():
+    '''This is function for login for existing user of CMS.'''
     loginw = Tk()
     loginw.title("Login to CMS")
     loginw.attributes('-fullscreen', True)
@@ -218,6 +230,7 @@ def exuser():
 
 #New User (register) window
 def newusers():
+    '''This is function for creation of new users and adding their data to database.'''
     new = Tk()
     new.title("Register to CMS")
     new.attributes('-fullscreen', True)
@@ -342,9 +355,11 @@ def newusers():
 
 #Homepage after login
 def homepagepre(win):
+    '''This pre function is for ccessing homepage() function. '''
     win.destroy()
     homepage()
 def homepage():
+    '''This is function for Home screen of CMS.'''
     home = Tk()
     home.title("Welcome to CMS")
     home.attributes('-fullscreen', True)
@@ -408,6 +423,7 @@ def homeback(win):
     homepage()
 #courier request
 def reqcourierpre(win):
+    ''''''
     win.destroy()
     reqcourier()
 def reqcourier():
@@ -581,7 +597,7 @@ def adminlogin():
         str2 = str(str2)
         if str1 and str2:
             #create admin without using any database
-            if str1 == 'admin' and str2 == 'admin':
+            if str1 == 'admin' and str2 == 'admin':    # Change it if necessary.
                 ad.destroy()
                 adminpage()
             else:
