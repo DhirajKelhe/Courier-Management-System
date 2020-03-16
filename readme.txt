@@ -1,4 +1,8 @@
 ## Courier-Management-System
+
+The CMS is designed using Python.
+Features: 1. Cost Estimation (using regression) 2. Creating Courier Request 3. Tracking Courier 4. Feedback 5. Creating New User
+
 CMS project using Python
 Important tips to run Courier Management System program:
 
